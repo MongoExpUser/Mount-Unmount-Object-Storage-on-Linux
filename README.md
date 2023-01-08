@@ -1,13 +1,8 @@
 # Mount-Object-Storage-on-Linux
 
-<br>
-<strong>
-Mount object storage on Linux/Ubuntu OS directory
-</strong>
-<br><br>
 
 ## Usage
-The script mounts object storage on Linux/Ubuntu OS directory. These include: <br>
+1) The script mounts object storage on Linux/Ubuntu OS directory. Object storage by various provideers include: <br>
     - Amazon S3 (aws_s3) <br>
     - Linode Object Storage (linode_objs) <br>
     - Backblaze Cloud Storage (b2_cs) <br>
