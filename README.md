@@ -2,13 +2,15 @@
 
 
 ## Usage
-1) The script mounts object storage on Linux/Ubuntu OS directory. Object storage by various provideers include: <br>
-    - Amazon S3 (aws_s3) <br>
-    - Linode Object Storage (linode_objs) <br>
-    - Backblaze Cloud Storage (b2_cs) <br>
-    - Google Cloud Storage (gcp_cs) <br>
-    - CrowdStorage Object Storage (PolyCloud, crd_objs)  <br>
-    - Azure Blob Storage (Azure_objs <br>
+1) The script mounts object storage on Linux/Ubuntu OS directory. 
+
+2) Object storage by various cloud providers include: <br>
+    - Amazon S3 (aws_s3) - https://aws.amazon.com/s3/?nc2=h_ql_prod_st_s3 <br>
+    - Linode Object Storage (linode_objs) - https://www.linode.com/products/object-storage/ <br>
+    - Backblaze Cloud Storage (b2_cs) - https://www.backblaze.com/b2/cloud-storage.html <br>
+    - Google Cloud Storage (gcp_cs) - https://cloud.google.com/storage<br>
+    - Azure Blob Storage (Azure_blbs - https://azure.microsoft.com/en-us/products/storage/blobs/ <br>
+    - Oracle Object Storage (Oracle_objs) - https://www.oracle.com/cloud/storage/object-storage/<br>
     - etc. <br>
 
 
