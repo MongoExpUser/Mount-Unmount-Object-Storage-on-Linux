@@ -52,8 +52,7 @@ clean_system () {
 
 mount_storage() {
 	if [ $mount_storage_confirm = true ]; then
-	
-		# install fuse and s3f3
+		# update system and then install fuse and s3f3
 	    sudo apt-get -y update
 	    sudo apt-get -y install fuse s3fs
 
