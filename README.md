@@ -16,7 +16,7 @@
 
 ## TO run the Bash script
 
-1) #### Download or clone the following fils, from this repo, into the current working directory (CWD) on the Linux/Ubuntu OS machine: <br>
+1) #### Download or clone the following file, from this repo, into the current working directory (CWD) on the Linux/Ubuntu OS machine: <br>
    - Bash script - mount-object-storage.sh<br>
    
 2) #### Fill in relevant input variables (line 22-27 of the script) at the top of the script including: <br>
