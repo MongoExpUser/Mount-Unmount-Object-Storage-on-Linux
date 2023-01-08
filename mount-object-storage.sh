@@ -33,27 +33,26 @@ credentials="access_key_id:secret_access_key"
 
 clean_system () {
 	if [ $clean_system_confirm = true ]; then
-
-      sudo chmod 775 /var/lib/apt/lists/
-      sudo rm -rf /var/lib/apt/lists/*
-      echo -e "Y"
-      echo -e "Y"
-      echo -e "Y"
-      sudo apt-get -y autoclean
-      echo -e "Y"
-      echo -e "Y"
-      echo -e "Y"
-      sudo apt-get -y autoremove
-      echo -e "Y"
-      echo -e "Y"
-      echo -e "Y"
-    fi
+		sudo chmod 775 /var/lib/apt/lists/
+		sudo rm -rf /var/lib/apt/lists/*
+		echo -e "Y"
+		echo -e "Y"
+		echo -e "Y"
+		sudo apt-get -y autoclean
+		echo -e "Y"
+		echo -e "Y"
+		echo -e "Y"
+		sudo apt-get -y autoremove
+		echo -e "Y"
+		echo -e "Y"
+		echo -e "Y"
+	fi
 }
 
 mount_storage() {
-    if [ $mount_storage_confirm = true ]; then
-
-	    # install fuse and s3f3
+	if [ $mount_storage_confirm = true ]; then
+	
+		# install fuse and s3f3
 	    sudo apt-get -y update
 	    sudo apt-get -y install fuse s3fs
 
@@ -61,31 +60,31 @@ mount_storage() {
 	    echo $provider_credentials > /etc/passwd-s3fs
 	    sudo chmod 640 /etc/passwd-s3fs
 
-	     # make mount dir & set permission
-	     sudo mkdir $mount_dir
-	     sudo chmod 777 $mount_dir
+	    # make mount dir & set permission
+	    sudo mkdir $mount_dir
+	    sudo chmod 777 $mount_dir
 
-	     # then mount bucket with s3fs
-	     sudo s3fs $bucket_name $mount_dir -o passwd_file=/etc/passwd-s3fs,nonempty,rw,allow_other,use_path_request_style,mp_umask=002,uid=$UID,gid=$UID -o url=$provider_url
+	    # then mount bucket with s3fs
+	    sudo s3fs $bucket_name $mount_dir -o passwd_file=/etc/passwd-s3fs,nonempty,rw,allow_other,use_path_request_style,mp_umask=002,uid=$UID,gid=$UID -o url=$provider_url
 
-	     # make permanent
-	     echo $bucket_name $mount_dir 'fuse.s3fs _netdev,nonempty,rw,allow_other,use_path_request_style 0 0' >> /etc/fstab
+	    # make permanent
+	    echo $bucket_name $mount_dir 'fuse.s3fs _netdev,nonempty,rw,allow_other,use_path_request_style 0 0' >> /etc/fstab
 
-	     # finally check content(s) of directory/bucket
-	     cd $mount_dir
-	     echo "Tested s3fs successfully mounted" >> $mount_dir/test-data.txt
-	     sudo df -h
-	     sudo df -aTh 
-	     sudo ls -ltr
+	    # finally check content(s) of directory/bucket
+	    cd $mount_dir
+	    echo "Tested s3fs successfully mounted" >> $mount_dir/test-data.txt
+	    sudo df -h
+	    sudo df -aTh 
+	    sudo ls -ltr
 
-	     # show mounted hard drives partition 
-	     sudo cat /proc/mounts  
+	    # show mounted hard drives partition 
+	    sudo cat /proc/mounts  
 
-	      # check S3 bucket for: test-data.txt   
+	    # check S3 bucket for: test-data.txt   
 
-	      # to unmount
-	      # sudo umount $mount_dir
-      fi
+	    # to unmount
+	    # sudo umount $mount_dir
+	fi
 }
 
 
