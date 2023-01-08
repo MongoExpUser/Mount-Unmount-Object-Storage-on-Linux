@@ -32,6 +32,7 @@ credentials="access_key_id:secret_access_key"
 
 
 clean_system () {
+
 	if [ $clean_system_confirm = true ]; then
 		sudo chmod 775 /var/lib/apt/lists/
 		sudo rm -rf /var/lib/apt/lists/*
