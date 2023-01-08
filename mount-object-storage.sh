@@ -18,16 +18,17 @@
 # set permission on main directories
 sudo chmod 775 /home
 
-# define common variable
+# define iuput variable
 clean_system_confirm=true
 mount_storage_confirm=true
 mount_dir="/path-to/my-dir"
 bucket_name="my-bucket-name"
-# providers: aws, linode, gcp, backblaze, azure, crowdstorage etc. Check providers' web sites for urls and credentials details
-# example of url: https://s3.us-east-2.amazonaws.com
-# example of cerdentials: AKIAgshshshshshshs:pghhs+jskjskskksksagKSU
 provider_url="my-provider-url" 
 credentials="access_key_id:secret_access_key"
+# providers: aws, linode, gcp, backblaze, crowdstorage, azure etc. 
+# Check providers' web sites for urls and credentials details
+# example of url: https://s3.us-east-2.amazonaws.com
+# example of credentials: CILKgshshshshshshs:pghhs-hkjskjskskksksagKSU
 
 
 clean_system () {
