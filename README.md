@@ -17,7 +17,13 @@
 1) #### Download or clone the following fils, from this repo, into the current working directory (CWD) on the Linux/Ubuntu OS machine: <br>
    - Bash script - mount-object-storage.sh<br>
    
-2) #### Fill in relevant input at the top of the script including: <br>
+2) #### Fill in relevant input variables (line 22-27 of the script) at the top of the script including: <br>
+   - clean_system_confirm
+   - mount_storage_confirm
+   - mount_dir
+   - bucket_name
+   - provider_url
+   - credentials
 
 4) #### Then set permssion on the script and run the script, assuming sudo access: <br>
    - set permission <br>
