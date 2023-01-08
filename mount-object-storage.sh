@@ -15,10 +15,10 @@
 #  mount-object-storage-data.sh                                                                                     #
 #===================================================================================================================#
 
-# set permission on main directories
+# set permission on main directory
 sudo chmod 775 /home
 
-# define iuput variable
+# define iuput variables
 clean_system_confirm=true
 mount_storage_confirm=true
 mount_dir="/path-to/my-dir"
