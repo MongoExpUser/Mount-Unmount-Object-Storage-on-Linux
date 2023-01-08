@@ -28,7 +28,7 @@ credentials="access_key_id:secret_access_key"
 # providers: aws, linode, gcp, backblaze, crowdstorage, azure etc. 
 # Check providers' web sites for urls and credentials details
 # example of url: https://s3.us-east-2.amazonaws.com
-# example of credentials: CILKgshshshshshshs:pghhs-hkjskjskskksksagKSU
+# example of credentials: CILKgshshshshshshs:pghhs-hkjskjskskksksagKSU 
 
 
 clean_system () {
