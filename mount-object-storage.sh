@@ -51,41 +51,41 @@ clean_system () {
 }
 
 mount_storage() {
-	if [ $mount_storage_confirm = true ]; then
+    if [ $mount_storage_confirm = true ]; then
 
-    # install fuse and s3f3
-		sudo apt-get -y update
-		sudo apt-get -y install fuse s3fs
+	    # install fuse and s3f3
+	    sudo apt-get -y update
+	    sudo apt-get -y install fuse s3fs
 
-    # set credentials
-		echo $provider_credentials > /etc/passwd-s3fs
-		sudo chmod 640 /etc/passwd-s3fs
+	    # set credentials
+	    echo $provider_credentials > /etc/passwd-s3fs
+	    sudo chmod 640 /etc/passwd-s3fs
 
-		# make mount dir & set permission
-		sudo mkdir $mount_dir
-		sudo chmod 777 $mount_dir
+	     # make mount dir & set permission
+	     sudo mkdir $mount_dir
+	     sudo chmod 777 $mount_dir
 
-		# then mount bucket with s3fs
-		sudo s3fs $bucket_name $mount_dir -o passwd_file=/etc/passwd-s3fs,nonempty,rw,allow_other,use_path_request_style,mp_umask=002,uid=$UID,gid=$UID -o url=$provider_url
-		
-		# make permanent
-    echo $bucket_name $mount_dir 'fuse.s3fs _netdev,nonempty,rw,allow_other,use_path_request_style 0 0' >> /etc/fstab
-        
-		# finally check content(s) of directory/bucket
-		cd $mount_dir
-	  echo "Tested s3fs successfully mounted" >> $mount_dir/test-data.txt
-		sudo df -h
-		sudo df -aTh 
-		sudo ls -ltr
+	     # then mount bucket with s3fs
+	     sudo s3fs $bucket_name $mount_dir -o passwd_file=/etc/passwd-s3fs,nonempty,rw,allow_other,use_path_request_style,mp_umask=002,uid=$UID,gid=$UID -o url=$provider_url
 
-		# show mounted hard drives partition 
-		sudo cat /proc/mounts  
+	     # make permanent
+	     echo $bucket_name $mount_dir 'fuse.s3fs _netdev,nonempty,rw,allow_other,use_path_request_style 0 0' >> /etc/fstab
 
-		# check S3 bucket for: test-data.txt   
+	     # finally check content(s) of directory/bucket
+	     cd $mount_dir
+	     echo "Tested s3fs successfully mounted" >> $mount_dir/test-data.txt
+	     sudo df -h
+	     sudo df -aTh 
+	     sudo ls -ltr
 
-		# to unmount
-		# sudo umount $mount_dir
-	fi
+	     # show mounted hard drives partition 
+	     sudo cat /proc/mounts  
+
+	      # check S3 bucket for: test-data.txt   
+
+	      # to unmount
+	      # sudo umount $mount_dir
+      fi
 }
 
 
