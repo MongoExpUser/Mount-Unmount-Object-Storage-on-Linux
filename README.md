@@ -1,2 +1,38 @@
-# mount-object-storage-on-linux
+# Mount-Object-Storage-on-Linux
+
+<br>
+<strong>
 Mount object storage on Linux/Ubuntu OS directory
+</strong>
+<br><br>
+
+## Usage
+The script mounts object storage on Linux/Ubuntu OS directory. These include: <br>
+    - Amazon S3 (aws_s3) <br>
+    - Linode Object Storage (linode_objs) <br>
+    - Backblaze Cloud Storage (b2_cs) <br>
+    - Google Cloud Storage (gcp_cs) <br>
+    - CrowdStorage Object Storage (PolyCloud, crd_objs)  <br>
+    - Azure Blob Storage (Azure_objs <br>
+    - etc. <br>
+
+
+## TO run the Bash script
+
+1) #### Download or clone the following fils, from this repo, into the current working directory (CWD) on the Linux/Ubuntu OS machine: <br>
+   - Bash script - mount-object-storage.sh<br>
+   
+2) #### Fill in relevant input at the top of the script including: <br>
+
+4) #### Then set permssion on the script and run the script, assuming sudo access: <br>
+   - set permission <br>
+   sudo chmod +x mount-object-storage.sh
+   - run <br>
+   ./mount-object-storage.sh
+
+
+# License
+
+Copyright © 2015 - present. MongoExpUser
+
+Licensed under the MIT license.
