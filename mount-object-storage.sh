@@ -25,7 +25,7 @@ mount_dir="/path-to/my-dir"
 bucket_name="my-bucket-name"
 provider_url="my-provider-url" 
 credentials="access_key_id:secret_access_key"
-# providers: aws, linode, gcp, backblaze, crowdstorage, azure etc. 
+# providers: aws, linode, gcp, backblaze, azure, oracle etc. 
 # Check providers' web sites for urls and credentials details
 # example of url: https://s3.us-east-2.amazonaws.com
 # example of credentials: CILKgshshshshshshs:pghhs-hkjskjskskksksagKSU 
