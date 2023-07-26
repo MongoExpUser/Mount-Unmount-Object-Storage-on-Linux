@@ -58,7 +58,7 @@ mount_storage() {
 	    sudo apt-get -y install fuse s3fs
 
 	    # set credentials
-	    echo $provider_credentials > /etc/passwd-s3fs
+	    echo $provider_credential > /etc/passwd-s3fs
 	    sudo chmod 640 /etc/passwd-s3fs
 
 	    # make mount dir & set permission
