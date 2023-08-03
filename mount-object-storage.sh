@@ -81,7 +81,7 @@ mount_storage() {
 	    # show mounted hard drives partition 
 	    sudo cat /proc/mounts  
 
-	    # check S3 bucket for: test-data.txt   
+	    # check object storage (bucket) for: test-data.txt   
 
 	    # to unmount
 	    # sudo umount $mount_dir
