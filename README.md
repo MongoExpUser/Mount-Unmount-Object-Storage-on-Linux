@@ -11,6 +11,8 @@
     - Google Cloud Storage (gcp_cs) - https://cloud.google.com/storage<br>
     - Azure Blob Storage (Azure_blbs - https://azure.microsoft.com/en-us/products/storage/blobs/ <br>
     - Oracle Object Storage (Oracle_objs) - https://www.oracle.com/cloud/storage/object-storage/<br>
+    - Digital Ocean Spaces Object Storage (do_sobjs) - https://docs.digitalocean.com/products/spaces/ <br>
+    - Vultr Object Storage (vul_objs) - https://www.vultr.com/pricing/#object-storage <br>
     - etc. <br>
 
 
@@ -29,7 +31,7 @@
 
 4) #### Then set permssion on the script and run the script, assuming sudo access: <br>
    - set permission <br>
-   sudo chmod +x mount-object-storage.sh
+   sudo chmod u+x mount-object-storage.sh
    - run <br>
    ./mount-object-storage.sh
 
