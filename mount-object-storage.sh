@@ -18,7 +18,7 @@
 # set permission on main directory
 sudo chmod 775 /home
 
-# define iuput variables
+# define input variables
 clean_system_confirm=true
 mount_storage_confirm=true
 mount_dir="/path-to/my-dir"
