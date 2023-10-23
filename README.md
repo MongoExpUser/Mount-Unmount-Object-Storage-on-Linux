@@ -13,6 +13,7 @@
     - Oracle Object Storage (Oracle_objs) - https://www.oracle.com/cloud/storage/object-storage/<br>
     - Digital Ocean Spaces Object Storage (do_sobjs) - https://docs.digitalocean.com/products/spaces/ <br>
     - Vultr Object Storage (vul_objs) - https://www.vultr.com/pricing/#object-storage <br>
+    - Scaleway Object Storage (scw_objs) - https://www.scaleway.com/en/object-storage/ <br>
     - etc. <br>
 
 
