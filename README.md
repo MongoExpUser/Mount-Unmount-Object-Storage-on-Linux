@@ -25,6 +25,7 @@
 2) #### Fill in relevant input variables (line 22-28 of the script) at the top of the script including: <br>
    - clean_system_confirm
    - mount_storage_confirm
+   - unmount_storage_confirm
    - mount_dir
    - bucket_name
    - provider_url
