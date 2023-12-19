@@ -1,5 +1,4 @@
 #!/bin/bash
-
 #===================================================================================================================#
 #                                                                                                                   #
 #  @License Starts                                                                                                  #
@@ -21,6 +20,7 @@ sudo chmod 775 /home
 # define input variables
 clean_system_confirm=true
 mount_storage_confirm=true
+unmount_storage_confirm=false
 mount_dir="/path-to/my-dir"
 bucket_name="my-bucket-name"
 provider_url="my-provider-url" 
@@ -50,7 +50,7 @@ clean_system () {
 	fi
 }
 
-mount_storage() {
+mount_or_unmount_storage() {
 
 	if [ $mount_storage_confirm = true ]; then
 	    # update system and then install fuse and s3f3
@@ -77,21 +77,23 @@ mount_storage() {
 	    sudo df -h
 	    sudo df -aTh 
 	    sudo ls -ltr
-
+     
 	    # show mounted hard drives partition 
 	    sudo cat /proc/mounts  
 
-	    # check object storage (bucket) for: test-data.txt   
-
-	    # to unmount
-	    # sudo umount $mount_dir
+	    # also, check object storage (bucket) for "test-data.txt" and check the file content to confirm
 	fi
+
+ 	if [ $unmount_storage_confirm = true ]; then
+  	    # to unmount
+	    sudo umount $mount_dir
+  	fi
 }
 
 
 main () {
 	clean_system 
-	mount_storage
+	mount_or_unmount_storage
 }
 
 main    
