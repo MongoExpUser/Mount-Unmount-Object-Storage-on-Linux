@@ -54,6 +54,9 @@ clean_system () {
 mount_or_unmount_storage() {
 
 	if [ $mount_storage_confirm = true ]; then
+             
+	     unmount_storage_confirm=false
+	     
 	    # update system and then install fuse and s3f3
 	    sudo apt-get -y update
 	    sudo apt-get -y install fuse s3fs
@@ -86,6 +89,9 @@ mount_or_unmount_storage() {
 	fi
 
  	if [ $unmount_storage_confirm = true ]; then
+            
+	    mount_storage_confirm=false
+     
   	    # to unmount
 	    sudo umount $mount_dir
   	fi
