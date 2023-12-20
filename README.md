@@ -9,8 +9,8 @@
     - Linode Object Storage (linode_objs) - https://www.linode.com/products/object-storage/ <br>
     - Backblaze Cloud Storage (b2_cs) - https://www.backblaze.com/b2/cloud-storage.html <br>
     - Google Cloud Storage (gcp_cs) - https://cloud.google.com/storage<br>
-    - Azure Blob Storage (Azure_blbs - https://azure.microsoft.com/en-us/products/storage/blobs/ <br>
-    - Oracle Object Storage (Oracle_objs) - https://www.oracle.com/cloud/storage/object-storage/<br>
+    - Azure Blob Storage (azure_blbs - https://azure.microsoft.com/en-us/products/storage/blobs/ <br>
+    - Oracle Object Storage (oci_objs) - https://www.oracle.com/cloud/storage/object-storage/<br>
     - Digital Ocean Spaces Object Storage (do_sobjs) - https://docs.digitalocean.com/products/spaces/ <br>
     - Vultr Object Storage (vul_objs) - https://www.vultr.com/pricing/#object-storage <br>
     - Scaleway Object Storage (scw_objs) - https://www.scaleway.com/en/object-storage/ <br>
