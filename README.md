@@ -34,7 +34,7 @@
 
 4) #### Then set permssion on the script and run the script, assuming sudo access: <br>
    - set permission <br>
-   sudo chmod u+x mount-object-storage.sh
+   sudo chmod u+x mount-unmount-object-storage.sh     
    - run <br>
    ./mount-object-storage.sh
 
