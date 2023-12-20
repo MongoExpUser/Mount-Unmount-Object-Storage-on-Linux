@@ -14,6 +14,7 @@
     - Digital Ocean Spaces Object Storage (do_sobjs) - https://docs.digitalocean.com/products/spaces/ <br>
     - Vultr Object Storage (vul_objs) - https://www.vultr.com/pricing/#object-storage <br>
     - Scaleway Object Storage (scw_objs) - https://www.scaleway.com/en/object-storage/ <br>
+    - OVH Object Storage (ovh_objs) - https://us.ovhcloud.com/public-cloud/object-storage/ <br>
     - etc. <br>
 
 
