@@ -21,7 +21,7 @@
 ## TO run the Bash script
 
 1) #### Download or clone the following file, from this repo, into the current working directory (CWD) on the Linux/Ubuntu OS machine: <br>
-   - Bash script - mount-object-storage.sh<br>
+   - Bash script - mount-unmount-object-storage.sh<br>
    
 2) #### Fill in relevant input variables (line 22-28 of the script) at the top of the script including: <br>
    - clean_system_confirm
@@ -34,9 +34,9 @@
 
 4) #### Then set permssion on the script and run the script, assuming sudo access: <br>
    - set permission <br>
-   sudo chmod u+x mount-unmount-object-storage.sh     
+   sudo chmod u+x mount-unmount-object-storage.sh    
    - run <br>
-   ./mount-object-storage.sh
+   ./mount-unmount-object-storage.sh
 
 
 # License
