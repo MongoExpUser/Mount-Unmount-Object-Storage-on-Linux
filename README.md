@@ -1,8 +1,8 @@
-# Mount-Object-Storage-on-Linux
+# Mount-Unmount-Object-Storage-on-Linux
 
 
 ## Usage
-1) The script mounts object storage on Linux/Ubuntu OS directory. 
+1) The script mounts or unmounts object storage on Linux/Ubuntu OS directory. 
 
 2) Object storage by various cloud providers include: <br>
     - Amazon S3 (aws_s3) - https://aws.amazon.com/s3/ <br>
