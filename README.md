@@ -15,6 +15,7 @@
     - Vultr Object Storage (vul_objs) - https://www.vultr.com/pricing/#object-storage <br>
     - Scaleway Object Storage (scw_objs) - https://www.scaleway.com/en/object-storage/ <br>
     - OVH Object Storage (ovh_objs) - https://us.ovhcloud.com/public-cloud/object-storage/ <br>
+    - Cloudflare R2 (clf_r2) - https://developers.cloudflare.com/r2/ <br>
     - etc. <br>
 
 
