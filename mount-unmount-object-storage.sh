@@ -25,10 +25,11 @@ unmount_storage_confirm=false
 mount_dir="/path-to/my-dir"
 bucket_name="my-bucket-name"
 provider_url="my-provider-url" 
-provider_credential="access_key_id:secret_access_key"
+provider_credential="access_key_id:secret_access_key" 
 # providers: aws, linode, gcp, backblaze, azure, oracle, do, vultr, scaleway, OVH, cloudflare, etc. 
 # Check providers' web sites for urls and credentials details
-# example of url: https://s3.us-east-2.amazonaws.com
+# url example 1 (aws): https://s3.us-REGION.amazonaws.com => for S3 bucket
+# url exmpale 2 (cloudflare): https://ACCOUNT-ID.r2.cloudflarestorage.com => for r2 bucket
 # example of credentials: CILKgshshshshshshs:pghhs-hkjskjskskksksagKSU => key:secret
 
 
