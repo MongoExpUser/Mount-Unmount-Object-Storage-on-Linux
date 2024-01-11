@@ -29,7 +29,8 @@ provider_credential="access_key_id:secret_access_key"
 # providers: aws, linode, gcp, backblaze, azure, oracle, do, vultr, scaleway, OVH, cloudflare, etc. 
 # Check providers' web sites for urls and credentials details
 # url example 1 (aws): https://s3.REGION.amazonaws.com => for S3 bucket
-# url exmpale 2 (cloudflare): https://ACCOUNT-ID.r2.cloudflarestorage.com => for r2 bucket
+# url example 2 (cloudflare): https://ACCOUNT-ID.r2.cloudflarestorage.com => for r2 bucket
+# url example 3 (backblaze): https://s3.REGION_NAME.backblazeb2.com => for b2 bucket
 # example of credentials: CILKgshshshshshshs:pghhs-hkjskjskskksksagKSU => key:secret
 
 
